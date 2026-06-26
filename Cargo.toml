@@ -1,0 +1,23 @@
+[package]
+name = "annunimas-human-tenant"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[lib]
+name = "annunimas_human"
+path = "src/lib.rs"
+
+[dependencies]
+annunimas-core = { path = "../../Annunimas/crates/annunimas-core" }
+annunimas-mnemosyne = { path = "../../Annunimas/crates/annunimas-mnemosyne" }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1"
+anyhow = "1.0"
+walkdir = "2.3"
+regex = "1.10"
+
+[dev-dependencies]
+tempfile = "3"
